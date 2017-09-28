@@ -15,8 +15,29 @@
  */
 @import "bootstrap";
 
-
+@mixin notice {
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 50px;
+}
+.text-white{
+  color: white;
+  background-color: pink;
+  font-size: 8px;
+}
 
 body{
   background-color: hotpink;
+}
+
+header{
+  @include notice;
+}
+.container{
+  align-content: center;
+}
+.fiveTweets{
+  align-content: center;
 }
